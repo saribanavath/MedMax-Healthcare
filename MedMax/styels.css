@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.page {
+    overflow-y: auto;
+}
+.page::-webkit-scrollbar {
+    display: none;
+}
+
+.box-for-chat {
+    overflow-y: auto;
+}
+.box-for-chat::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 720px;
+}
+
+.searchbar {
+    height: 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+}
+
+.prompt-box {
+    height: 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+}
+
+.navbar li {
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.homepage {
+    margin-top: 100px;
+}
+
+#welh1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 200px;
+    font-weight: bold;
+    background-color: red;
+    background-image: linear-gradient(500deg, #000000, #FF0000);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.welcome {
+    animation: fadeIn 2s ease forwards;
+}
+
+.explore {
+    background-color: blue;
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.chatbox {
+    position: relative;
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border-radius: 24px;
+    margin: 24px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.box-for-chat {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-box {
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 0.1px solid #F8001F;
+    width: 95%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px #F8001F;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding
